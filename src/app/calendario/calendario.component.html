@@ -1,0 +1,11 @@
+<p-datepicker class="max-w-full" [(ngModel)]="date" [inline]="true">
+  <ng-template #date let-date>
+
+    <div class="dia">
+      <span class="nDia">{{ date.day }}</span>
+      {{getMissasDia(date)}}
+    </div>
+
+  </ng-template>
+
+</p-datepicker>
